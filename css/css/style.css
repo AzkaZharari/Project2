@@ -832,25 +832,9 @@ hr{
 
 
 /** about page **/
-.profiltitle .img{
-     margin-left: 120px\;
-     
-}
+
 .about_page .blue_bg .titlepage h2 {
      color: #fff;
-     font-size: x-large;
-}
-
-.aboutpage {
-     margin-top: 10px;
-     padding-top: 20px;  
-     margin-left: 140px;
-}
-
-.aboutpage2 {
-     margin-top: 20px;
-     padding-top: 20px;
-     margin-left: 130px;  
 }
 
 .about {
@@ -985,15 +969,3 @@ hr{
 
 /** end contact section **/
 
-/** booking page **/
-.booking{
-     margin-left: 130px;
-     margin-right: 100px;
-     padding-left: 2px;
-     margin-top: 15px;
-}
-
-.book{
-     margin-top: 25px;
-     margin-bottom: 20px;
-}
