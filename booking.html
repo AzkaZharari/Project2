@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!-- basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- site metas -->
+      <title>Bengkel Prima | Bengkel Mobil</title>
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <!-- bootstrap css -->
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <!-- style css -->
+      <link rel="stylesheet" href="css/style.css">
+      <!-- Responsive-->
+      <link rel="stylesheet" href="css/responsive.css">
+      <!-- fevicon -->
+      <link rel="icon" href="images/atas/logo atas.png" type="image/gif" />
+      <!-- Scrollbar Custom CSS -->
+      <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+      <!-- Tweaks for older IEs-->
+      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+      <style>
+         
+      </style>
+   </head>
+   <!-- body -->
+   <body class="main-layout footer_to90 booking_page">
+      <!-- loader  -->
+      <!-- <div class="loader_bg">
+         <div class="loader"><img src="images/loading.gif" alt="#" /></div>
+      </div> -->
+      <!-- end loader -->
+      <!-- header -->
+      <header>
+         <div class="header">
+            <div class="header_midil">
+                <img src="images/atas/logo header.png"/>
+            </div>
+            <div class="header_bottom">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-xl-8 col-lg-8 col-md-8 col-sm-8">
+                        <nav class="navigation navbar navbar-expand-md navbar-dark ">
+                           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+                           <span class="navbar-toggler-icon"></span>
+                           </button>
+                           <div class="collapse navbar-collapse" id="navbarsExample04">
+                              <ul class="navbar-nav mr-auto">
+                                 <li class="nav-item">
+                                    <a class="nav-link" href="home.html">Beranda</a>
+                                 </li>
+                                 <li class="nav-item">
+                                    <a class="nav-link" href="product.html">Produk & Layanan</a>
+                                 </li>
+                                 <li class="nav-item active">
+                                    <a class="nav-link" href="booking.html">Booking</a>
+                                 </li>
+                                 <li class="nav-item">
+                                    <a class="nav-link" href="berita.html">Berita</a>
+                                 </li>
+                                 <li class="nav-item">
+                                    <a class="nav-link" href="contact.html">Tentang Kami</a>
+                                 </li>
+                              </ul>
+                           </div>
+                        </nav>
+                     </div>
+                     <div class="col-md-3">
+                        <div class="search">
+                           <form action="/action_page.php">
+                              <input class="form_sea" type="text" placeholder="Search" name="search">
+                              <button type="submit" class="seach_icon"><i class="fa fa-search"></i></button>
+                           </form>
+                        </div>
+                     </div>
+                     <div class="col-md-1">
+                        <div class="login">
+                              <a href="login.html"><button class="button-login">Login</button></a>
+                        </div>
+                  </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </header>
+      <!-- end header inner -->
+      <!-- end header -->
+      <div class="blue_bg">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="titlepage">
+                     <h2>Booking</h2>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      
+      <!-- Form -->
+      <form class="booking">
+         <fieldset style="border: 1px solid black; padding: 20px;">
+            <legend> Booking Service</legend>
+               <div class="form-group row">
+                  <label for="jeniskendaraan" class="col-4 col-form-label">Jenis Kendaraan</label> 
+                  <div class="col-8">
+                     <select id="jeniskendaraan" name="jeniskendaraan" class="custom-select">
+                        <option value="rabbit">Sedan</option>
+                        <option value="duck">Truk</option>
+                        <option value="fish">Pick Up</option>
+                        <option value="fish">Bemo</option>
+                        <option value="fish">Bus</option>
+                        <option value="fish">Mobil</option>
+                     </select>
+                  </div>
+               </div>
+               <div class="form-group row">
+                  <label class="col-4 col-form-label" for="text">Nama Pemesan</label> 
+                  <div class="col-8">
+                     <input id="text" name="text" placeholder="Masukkan nama" type="text" class="form-control">
+                  </div>
+               </div>
+               <div class="form-group row">
+                  <label class="col-4">Kategori Peminjam</label> 
+                  <div class="col-8">
+                     <div class="custom-control custom-radio custom-control-inline">
+                     <input name="kategori" id="kategori_0" type="radio" class="custom-control-input" value="pribadi"> 
+                     <label for="kategori_0" class="custom-control-label">Pribadi</label>
+                     </div>
+                     <div class="custom-control custom-radio custom-control-inline">
+                     <input name="kategori" id="kategori_1" type="radio" class="custom-control-input" value="perusahaan"> 
+                     <label for="kategori_1" class="custom-control-label">Perusahaan/Organisasi</label>
+                     </div>
+                  </div>
+               </div>
+               <div class="form-group row">
+                  <label for="deskripsi" class="col-4 col-form-label">Deskripsi Kebutuhan</label> 
+                  <div class="col-8">
+                     <textarea id="deskripsi" name="deskripsi" cols="40" rows="3" class="form-control"></textarea>
+                  </div>
+               </div>
+               <div class="form-group row">
+                  <label for="tanggal" class="col-4 col-form-label">Jam, Tanggal service</label> 
+                  <div class="col-8">
+                     <div class="input-group">
+                     <input id="tanggal" name="tanggal" type="date" class="form-control"> 
+                     
+                     </div>
+                  </div>
+               </div>
+               <div class="form-group row">
+                  <label for="montir" class="col-4 col-form-label">Request Montir</label> 
+                  <div class="col-8">
+                     <input id="montir" name="montir" type="text" class="form-control">
+                  </div>
+               </div>
+               <div class="form-group row">
+                  <label for="handphone" class="col-4 col-form-label">No.Handphone</label> 
+                  <div class="col-8">
+                     <input id="handphone" name="handphone" type="text" class="form-control">
+                  </div>
+               </div>
+               <div class="form-group row">
+                  <label for="email" class="col-4 col-form-label">Email</label> 
+                  <div class="col-8">
+                     <input id="email" name="email" placeholder="Masukkan email" type="text" class="form-control">
+                  </div>
+               </div> 
+               <div class="form-group row">
+                  <div class="offset-4 col-8">
+                     <button name="submit" type="submit" class="btn btn-primary">Submit</button>
+                     <button name="reset" type="reset" class="btn btn-primary">Reset</button>
+                  </div>
+               </div>        
+         </fieldset>
+      </form>
+
+      <!-- end project section -->
+      <!-- Footer -->
+      <footer id="footer">
+         <div id="kontak">
+            <div class="footer-top">
+               <div class="container">
+                  <div class="row">
+                  <div class="col-lg-3 col-md-6 footer-contact">
+                     <h3>Bengkel Prima</h3>
+                     <p>
+                       Jln. Raya Pasir Hitam, Cileungsi
+                       Blok Barat, Grand Kahuripan<br><br>
+                       <strong>Phone:</strong> 0857-7428-8294<br>
+                       <strong>Email:</strong> bengkel.prima@gmail.com<br>
+                     </p>
+                  </div>
+            
+                  <div class="col-lg-2 col-md-6 footer-links">
+                     <h4>Tautan</h4>
+                     <ul>
+                       <li><i class="bx bx-chevron-right"></i> <a href="#home">Beranda</a></li>
+                       <li><i class="bx bx-chevron-right"></i> <a href="#about">Produk & Layanan</a></li>
+                       <li><i class="bx bx-chevron-right"></i> <a href="#services">Booking</a></li>
+                       <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+                       <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+                     </ul>
+                  </div>
+            
+                  <div class="col-lg-3 col-md-6 footer-links">
+                     <h4>Pelayanan Unggulan</h4>
+                     <ul>
+                       <li><i class="bx bx-chevron-right"></i> <a href="#">Service Besar</a></li>
+                       <li><i class="bx bx-chevron-right"></i> <a href="#">Service Ringan</a></li>
+                       <li><i class="bx bx-chevron-right"></i> <a href="#">Body Repair</a></li>
+                     </ul>
+                  </div>
+            
+                  <div class="col-lg-4 col-md-6 footer-newsletter">
+                     <h4>Kirimkan Kami Pesan</h4>
+                     <p>Komitmen kami memberikan layanan terbaik kepada setiap pelanggan dan pengunjung. Saran dan masukan dari anda juga sangat berguna untuk evaluasi kami.</p>
+                     <form action="" method="post">
+                       <input type="email" name="email"><input type="submit" value="Subscribe">
+                     </form>
+                  </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <footer class="footer-box">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-12">
+                  <p class="footer-company-name">All Rights Reserved. &copy; 2022 <a href="#">Bengkel Prima</a> Design By : <a href="https://html.design/">html design</a></p>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <!-- End Footer -->
+ 
+      <!-- Javascript files-->
+      <script src="js/jquery.min.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/jquery-3.0.0.min.js"></script>
+      <!-- sidebar -->
+      <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+      <script src="js/custom.js"></script>
+   </body>
+</html>
+
