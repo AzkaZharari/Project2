@@ -230,7 +230,7 @@
       <!-- Sidebar Menu -->
       <nav class="mt-2">
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-          <li class="nav-item menu-open">
+          <li class="nav-item">
             <a href="daftarmontir.html" class="nav-link">
               <i class="nav-icon fas fa-users"></i>
               <p>
@@ -238,8 +238,8 @@
               </p>
             </a>
           </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link active">
+          <li class="nav-item menu-open">
+            <a href="#" class="nav-link">
               <i class="nav-icon fas fa-clipboard"></i>
               <p>
                 Transaksi
@@ -283,8 +283,8 @@
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="daftarmontir.html">Dashboard</a></li>
-              <li class="breadcrumb-item active">Kelola Montir / Mekanik</li>
+              <li class="breadcrumb-item"><a href="daftartransaksi.html">Transaksi</a></li>
+              <li class="breadcrumb-item active">Kelola Transaksi</li>
             </ol>
           </div>
         </div>
@@ -293,88 +293,89 @@
 
     
     <!-- Main content -->
-    <fieldset style="border: 2px solid black; padding-top: 20px; margin: 15px 15px;">
-    <section class="content">
-      <div class="container-fluid">
-        <div class="row">
-          <!-- left column -->
-            <div class="col-md-12">
-            <!-- general form elements -->
-            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"> 
-            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-            
-            <form>
-              <div class="form-group row">
-                <label for="nama" class="col-4 col-form-label">Nama Mekanik</label> 
-                <div class="col-4">
-                  <input id="nama" name="nama" placeholder="Masukan nama" type="text" class="form-control">
-                </div>
-              </div>
-              <div class="form-group row">
-                <label for="kategori" class="col-4 col-form-label">Kategori</label> 
-                <div class="col-4">
-                  <select id="kategori" name="kategori" class="custom-select">
-                    <option value="direktur">Kepala bengkel</option>
-                    <option value="advisor">Kepala Mekanik</option>
-                    <option value="frontdesk">Front Desk</option>
-                    <option value="staf">Staff Mekanik</option>
-                    <option value="sparepart">Spare Part</option>
-                  </select>
-                </div>
-              </div>
-              <div class="form-group row">
-                <label for="skill" class="col-4 col-form-label">Deskripsi Skill</label> 
-                <div class="col-4">
-                  <textarea id="skill" name="skill" cols="40" rows="5" class="form-control" placeholder="Masukkan Deskripsi"></textarea>
-                </div>
-              </div>
-              <div class="form-group row">
-                <label class="col-4">Kemampuan</label> 
-                <div class="col-8">
-                  <div class="custom-control custom-checkbox custom-control-inline">
-                    <input name="kemampuan" id="kemampuan_0" type="checkbox" class="custom-control-input" value="besar"> 
-                    <label for="kemampuan_0" class="custom-control-label">Service Besar</label>
-                  </div>
-                  <div class="custom-control custom-checkbox custom-control-inline">
-                    <input name="kemampuan" id="kemampuan_1" type="checkbox" class="custom-control-input" value="ringan"> 
-                    <label for="kemampuan_1" class="custom-control-label">Service Ringan</label>
-                  </div>
-                  <div class="custom-control custom-checkbox custom-control-inline">
-                    <input name="kemampuan" id="kemampuan_2" type="checkbox" class="custom-control-input" value="body"> 
-                    <label for="kemampuan_2" class="custom-control-label">Body Repair</label>
+    <fieldset style="border: 2px solid black; padding-top: 20px; margin:20px 20px;">
+      <section class="content">
+        <div class="container-fluid">
+          <div class="row">
+            <!-- left column -->
+              <div class="col-md-12">
+              <!-- general form elements -->
+              <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"> 
+              <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+              
+              <form>
+                <div class="form-group row">
+                  <label for="nama" class="col-4 col-form-label">Nama Pelanggan</label> 
+                  <div class="col-4">
+                    <input id="nama" name="nama" placeholder="Masukan nama" type="text" class="form-control">
                   </div>
                 </div>
-              </div>
-              <div class="form-group row">
-                <label for="tempatlahir" class="col-4 col-form-label">Tempat Lahir</label> 
-                <div class="col-4">
-                  <input id="tempatlahir" name="tempatlahir" type="text" class="form-control">
+                <div class="form-group row">
+                  <label for="nama" class="col-4 col-form-label">Nomor Polisi</label> 
+                  <div class="col-4">
+                    <input id="nama" name="nama" placeholder="Masukan nomor" type="number" class="form-control">
+                  </div>
                 </div>
-              </div>
-              <div class="form-group row">
-                <label for="tanggallahir" class="col-4 col-form-label">Tnggal Lahir</label> 
-                <div class="col-2">
-                  <input id="tanggallahir" name="tanggallahir" type="date" class="form-control">
+                <div class="form-group row">
+                  <label for="kategori" class="col-4 col-form-label">Kategori</label> 
+                  <div class="col-4">
+                    <select id="kategori" name="kategori" class="custom-select">
+                      <option value="direktur">Mobil</option>
+                      <option value="advisor">Sedan</option>
+                      <option value="frontdesk">Truk</option>
+                      <option value="staf">Bus</option>
+                      <option value="sparepart">Pickup</option>
+                      <option value="sparepart">Lainnya</option>
+                    </select>
+                  </div>
                 </div>
-              </div>
-              <div class="form-group row">
-                <label for="hanphone" class="col-4 col-form-label">Nomor Hanphone</label> 
-                <div class="col-4">
-                  <input id="hanphone" name="hanphone" type="number" class="form-control">
+                <div class="form-group row">
+                  <label for="skill" class="col-4 col-form-label">Keluhan</label> 
+                  <div class="col-4">
+                    <textarea id="skill" name="skill" cols="40" rows="5" class="form-control" placeholder="Masukkan Keluhan"></textarea>
+                  </div>
                 </div>
-              </div> 
-             
-              <div class="form-group row">
-                <div class="offset-4 col-8">
-                  <button name="submit" type="submit" class="btn btn-primary">Submit</button>
+                <div class="form-group row">
+                  <label class="col-4">Jenis Layanan</label> 
+                  <div class="col-8">
+                    <div class="custom-control custom-checkbox custom-control-inline">
+                      <input name="kemampuan" id="kemampuan_0" type="checkbox" class="custom-control-input" value="besar"> 
+                      <label for="kemampuan_0" class="custom-control-label">Service Besar</label>
+                    </div>
+                    <div class="custom-control custom-checkbox custom-control-inline">
+                      <input name="kemampuan" id="kemampuan_1" type="checkbox" class="custom-control-input" value="ringan"> 
+                      <label for="kemampuan_1" class="custom-control-label">Service Ringan</label>
+                    </div>
+                    <div class="custom-control custom-checkbox custom-control-inline">
+                      <input name="kemampuan" id="kemampuan_2" type="checkbox" class="custom-control-input" value="body"> 
+                      <label for="kemampuan_2" class="custom-control-label">Body Repair</label>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </form>
-        </div>
-        <!-- /.row -->
-      </div><!-- /.container-fluid -->
-    </section>
-</fieldset>
+                <div class="form-group row">
+                  <label for="tanggallahir" class="col-4 col-form-label">Tanggal Transaksi</label> 
+                  <div class="col-2">
+                    <input id="tanggallahir" name="tanggallahir" type="date" class="form-control">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="hanphone" class="col-4 col-form-label">Nomor Hanphone</label> 
+                  <div class="col-4">
+                    <input id="hanphone" name="hanphone" type="number" class="form-control">
+                  </div>
+                </div> 
+               
+                <div class="form-group row">
+                  <div class="offset-4 col-8">
+                    <button name="submit" type="submit" class="btn btn-primary">Submit</button>
+                  </div>
+                </div>
+              </form>
+          </div>
+          <!-- /.row -->
+        </div><!-- /.container-fluid -->
+      </section>
+  </fieldset>
     <!-- /.content -->
   </div>
   <!-- /.content-wrapper -->
